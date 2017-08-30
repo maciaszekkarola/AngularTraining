@@ -1,0 +1,12 @@
+.articleBox {
+    justify-content: space-between;
+    display: flex;
+}
+.article {
+    display: flex;
+}
+.header h1{
+    text-align: center;
+    border: 1px dashed white; 
+    line-height: 80px;   
+}

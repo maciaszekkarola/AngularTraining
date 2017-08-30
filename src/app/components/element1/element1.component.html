@@ -1,0 +1,12 @@
+<h2>data from placeholder json</h2>
+<!-- <div *ngFor = "let post of posts">
+    <span>{{post.id}}.{{post.title}}</span> 
+</div> -->
+
+<!-- condition display-->
+<div *ngIf = "1===1">
+    <div *ngFor = "let post of posts, let i = index">
+        <span *ngIf="i<=10">index:{{i}} post:{{post.body}}</span> 
+    </div>
+</div>
+    
