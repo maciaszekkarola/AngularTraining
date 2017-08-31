@@ -35,7 +35,7 @@ export class FirstComponent implements OnInit {
     this.text3 = 'click to activate';
     this.isAvailable = false;
     this.title = 'first option to display';
-    this.size = 10;
+    this.size = 20;
   }
 
 }

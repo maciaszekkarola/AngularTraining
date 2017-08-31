@@ -1,13 +1,22 @@
 .color {
     border: 5px solid yellow;
+}
+.attr > p {
+    display : inline;
 
 }
 .attr {
    background-color: #3c5070;
 }
-
 .highlighted {
     border: 5px solid black;
+}
+
+.endziKlass {
+    background-color: #904387;
+}
+.endziKlass * {
+    display: inline-block;
 }
 .unavailable {
     color: red;
@@ -22,8 +31,10 @@
     height: 50px;
     display: inline-block;
 }
-
 button {
     width: 200px;
     height: 60px;
+}
+.endziStajl{
+    background-color: #3C745F
 }
