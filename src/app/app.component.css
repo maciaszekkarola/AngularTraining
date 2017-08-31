@@ -61,3 +61,6 @@ a {
     display: flex;
     width: 20%;
 }
+.coloured {
+    background-color: #0C4AE7;
+}

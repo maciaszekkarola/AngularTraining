@@ -20,42 +20,13 @@ export class AsideLeftComponent implements OnInit {
 
   constructor() { }
 
-  // hovering(event) {
-  //   event.preventDefault();
-  //   event = event.target;
-  //   if (this.hover === true) {
-  //     this.hover = false;
-  //     this.color = '#0c563f';
-  //   } else {
-  //     this.hover = true;
-  //     this.color = 'green';
-  //   }
-  //   console.log(event + this);
-  // }
-
-
-  // second version
-
   hovering(event) {
     event = event.target;
-    if (this.hover === false) {
-      this.links.forEach(link => {
-        //
-        this.hover = true;
-        this.color = 'green';
-        // console.log(link);
-      });
-    }else {
-      this.hover = false;
-      this.color = '#0c563f';
-    }
-
-    console.log(event);
+    event.classList.toggle('coloured');
   }
 
 
   ngOnInit() {
-    console.log('aside-left component called');
   }
 
 }

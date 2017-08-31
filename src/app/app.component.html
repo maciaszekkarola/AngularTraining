@@ -5,10 +5,7 @@
     </div>
     <nav>
       <ul>
-        <li><a routerLink="/">placeholder Api</a></li>
-        <li><a routerLink="/element2">bootstrap stuff</a></li>
-        <li><a routerLink="/element3">Pics</a></li>
-        <li><a routerLink="/element4">onDestroy</a></li>
+        <li (mouseenter)="hover($event)" (mouseleave)="hover($event)" *ngFor="let link of links"><a routerLink="{{link[1]">{{link[0]}}</a></li>
       </ul>
     </nav>  
   </div>
