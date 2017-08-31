@@ -1,12 +1,30 @@
 <h2>data from placeholder json</h2>
-<!-- <div *ngFor = "let post of posts">
-    <span>{{post.id}}.{{post.title}}</span> 
-</div> -->
+<div class = "buttons">
+    <button (click) = "getFirst($event)">First 10 posts</button>
+    <button (click) = "getTitles($event)">Get only 10 titles </button>
+    <button (click) = "getRecent($event)">Most recent posts</button>
+</div>
 
-<!-- condition display-->
-<div *ngIf = "1===1">
-    <div *ngFor = "let post of posts, let i = index">
-        <span *ngIf="i<=10">index:{{i}} post:{{post.body}}</span> 
+<div class = "content">
+    <!-- test button1 -->
+    <div *ngIf = "button1 === true">
+        <div *ngFor = "let post of posts, let i = index">
+            <span *ngIf="i<=10">index:{{i}} post:{{post.body}}</span> 
+        </div>
+    </div>
+    
+    <!-- test button2 -->
+    <div *ngIf = "button2 === true">
+        <div *ngFor = "let post of posts, let i = index">
+            <span *ngIf="i<=10">{{i}} title:{{post.title}}</span> 
+        </div>
+    </div>
+    
+    <!-- test button3 -->
+    <div *ngIf = "button3 === true">
+        <div *ngFor = "let post of posts, let i = index">
+             <span *ngIf="i >= (posts.length-1)-10">{{i}} post:{{post.title}}</span> 
+        </div>
     </div>
 </div>
-    
+
