@@ -16,10 +16,11 @@
   </div>
   <div>
     <p>NgStyle trail</p>
+    <!-- pierwszy kolor jest propsem wziętym z ngModel więc nie musi występować bezpośrednio w klasie, 
+      size natomiast musi miec określony stan początkowy, więc umieściłam go w klasie-->
     <h2 [ngStyle] = "{'color':color, 'font-size': size + 'px'}">Style change with NgStyle</h2>
     <input [(ngModel)] = "color" />
     <button (click)="size = size + 1"> + </button>
     <button (click)="size = size - 1"> + </button>
-    
   </div>
 </section>
