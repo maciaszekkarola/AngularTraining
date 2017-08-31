@@ -7,4 +7,9 @@
       <app-form ></app-form>
     </div>
   </div>
+  <div >
+    <button [ngClass] = "{available:isAvailable, unavailable: !isAvailable}" 
+    (click) = "test($event)">{{text3}}</button>
+    <div class = "square" [ngClass] = "{available:isAvailable, unavailable: !isAvailable}" ></div>
+  </div>
 </section>

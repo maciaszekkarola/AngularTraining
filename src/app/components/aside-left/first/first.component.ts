@@ -10,8 +10,17 @@ export class FirstComponent implements OnInit {
   description = 'another option';
   isit = true;
   isHigh = true;
+  isAvailable: boolean;
+  text1 = 'desactivate';
+  text2 = 'activated';
+  text3: string;
 
   constructor() { }
+
+  test(event) {
+    this.isAvailable = !this.isAvailable;
+    return this.text3 = (this.isAvailable) ? this.text2 : this.text1;
+  }
 
   handleColor() {
     this.isit = !this.isit;
@@ -22,6 +31,8 @@ export class FirstComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.text3 = 'click to activate';
+    this.isAvailable = false;
     this.title = 'first option to display';
   }
 

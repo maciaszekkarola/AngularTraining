@@ -10,7 +10,6 @@ import { DataService } from '../../../services/data.service';
 export class ThirdComponent implements OnInit {
   facts: Facts[];
 
-
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
