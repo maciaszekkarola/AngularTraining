@@ -14,6 +14,7 @@ export class FirstComponent implements OnInit {
   text1 = 'desactivate';
   text2 = 'activated';
   text3: string;
+  size: number;
 
   constructor() { }
 
@@ -34,6 +35,7 @@ export class FirstComponent implements OnInit {
     this.text3 = 'click to activate';
     this.isAvailable = false;
     this.title = 'first option to display';
+    this.size = 10;
   }
 
 }

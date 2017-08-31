@@ -1,6 +1,9 @@
 .color {
-    border: 5px solid black;
+    border: 5px solid yellow;
 
+}
+.attr {
+   background-color: #3c5070;
 }
 
 .highlighted {
@@ -21,6 +24,6 @@
 }
 
 button {
-    width: 150px;
-    height: 80px;
+    width: 200px;
+    height: 60px;
 }
