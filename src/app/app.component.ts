@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   links: [string, string][] = [
-    ['placeholder Api', '/elemen1'],
-    ['bootstrap stuff ', '/elemen2'],
-    ['pics ', '/elemen3'],
-    ['onDestroy ', '/elemen4'],
+    ['placeholder Api', '/'],
+    ['bootstrap stuff ', '/element2'],
+    ['pics ', '/element3'],
+    ['onDestroy ', '/element4'],
   ];
   constructor(){}
 

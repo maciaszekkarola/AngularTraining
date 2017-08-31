@@ -18,6 +18,8 @@ import { ThirdComponent } from './components/aside-left/third/third.component';
 import { FourthComponent } from './components/aside-left/fourth/fourth.component';
 import { FormComponent } from './components/form/form.component';
 import { ArticleComponent } from './components/article/article.component';
+import { CoffeComponent } from './components/aside-left/fourth/coffe/coffe.component';
+import { TeaComponent } from './components/aside-left/fourth/tea/tea.component';
 
 const appRoutes: Routes = [
   {path: '', component: Element1Component},
@@ -28,6 +30,8 @@ const appRoutes: Routes = [
   {path: 'second', component: SecondComponent},
   {path: 'third', component: ThirdComponent},
   {path: 'fourth', component: FourthComponent},
+  {path: 'fourth/coffe', component: CoffeComponent},
+  {path: 'fourth/tea', component: TeaComponent},
 ];
 
 @NgModule({
@@ -44,7 +48,9 @@ const appRoutes: Routes = [
     ThirdComponent,
     FourthComponent,
     FormComponent,
-    ArticleComponent
+    ArticleComponent,
+    CoffeComponent,
+    TeaComponent
   ],
   imports: [
     BrowserModule,
