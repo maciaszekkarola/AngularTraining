@@ -1,0 +1,21 @@
+.green {
+    background-color: #8CB48C;
+}
+.red {
+    background-color: #BA6B6B;
+}
+.black {
+    background-color: #3A1818;
+}
+.white {
+    background-color: #EDDFB7;
+}
+.glass {
+    width: 50px;
+    height: 100px;
+    border: 2px solid black;
+}
+button {
+    width: 80px;
+    height: 50px;
+}

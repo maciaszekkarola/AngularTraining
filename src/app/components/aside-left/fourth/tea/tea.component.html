@@ -4,3 +4,13 @@
 </p>
 <img src="assets/drink.jpeg" alt="" width= "50%">
 
+<div>
+  <h2>
+    What tea do you like?
+  </h2>
+  <div class = "buttons">
+    <button *ngFor = "let button of buttons">{{button}}</button>
+  </div>
+  <div class = "glass" [ngClass] = "classes"></div>
+</div>
+
