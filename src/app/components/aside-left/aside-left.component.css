@@ -11,3 +11,7 @@ li {
 .coloured {
    background-color: green;
 }
+
+.selected {
+    background-color: #59D721;
+}

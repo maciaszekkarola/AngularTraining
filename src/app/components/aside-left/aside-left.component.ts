@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class AsideLeftComponent implements OnInit {
   hover = false;
   color = '#0c563f';
-  // wielowymiarowa tablica, pierwszy string okresla nazwe linka, a drugi scieżkę
+    // wielowymiarowa tablica, pierwszy string okresla nazwe linka, a drugi scieżkę
   // zastosowanie <a routerLink = "{{link[1]}}">{{link[0]}}</a>
   links: [string, string][] = [
     ['class field', '/first'],

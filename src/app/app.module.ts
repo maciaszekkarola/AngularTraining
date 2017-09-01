@@ -20,9 +20,11 @@ import { FormComponent } from './components/form/form.component';
 import { ArticleComponent } from './components/article/article.component';
 import { CoffeComponent } from './components/aside-left/fourth/coffe/coffe.component';
 import { TeaComponent } from './components/aside-left/fourth/tea/tea.component';
+import { HomeComponent } from './components/home/home.component';
 
 const appRoutes: Routes = [
-  {path: '', component: Element1Component},
+  {path: '', component: HomeComponent},
+  {path: 'element1', component: Element1Component},
   {path: 'element2', component: Element2Component},
   {path: 'element3', component: Element3Component},
   {path: 'element4', component: Element4Component},
@@ -50,7 +52,8 @@ const appRoutes: Routes = [
     FormComponent,
     ArticleComponent,
     CoffeComponent,
-    TeaComponent
+    TeaComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

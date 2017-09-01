@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   links: [string, string][] = [
-    ['placeholder Api', '/'],
+    ['placeholder Api', '/element1'],
     ['bootstrap stuff ', '/element2'],
     ['pics ', '/element3'],
     ['onDestroy ', '/element4'],

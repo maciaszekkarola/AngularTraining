@@ -62,8 +62,9 @@ a {
     width: 15%;
 }
 .coloured {
-    background-color: #0C4AE7;
+    background-color: #033CCD;
 }
 
-/* test */
-
+.selected {
+    background-color: #1E76F4
+}
