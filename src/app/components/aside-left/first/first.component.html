@@ -1,7 +1,7 @@
 <section>
   <h2>Classes field</h2>
   <div class = "attr">
-    <button (click) = "toggle()">Click to toggle border on text below</button>
+    <button (click) = "toggle()">toggle border</button>
     <p [class.highlighted] = "isHigh">{{title}}</p>
     <p [class.highlighted] = "isHigh" >{{description}}</p>
     <div class = "formBox" [class.color] = "isit" (click) = "handleColor()">

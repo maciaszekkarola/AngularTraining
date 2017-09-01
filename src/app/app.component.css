@@ -47,20 +47,23 @@ a {
     height: 100%;
     background-color:#14427f;
     display: flex;
-    width: 80%;
+    width: 70%;
 }
 .left {
     height: 100%;
-    background-color: #0c563f;
+    background-color: #0C563E;
     display: inline-block;
-    width: 20%;
+    width: 15%;
 }
 .right {
     height: 100%;
     background-color:#0c563f;
     display: flex;
-    width: 20%;
+    width: 15%;
 }
 .coloured {
     background-color: #0C4AE7;
 }
+
+/* test */
+
