@@ -1,7 +1,7 @@
 <div>
     <ul >
         <li *ngFor="let link of links" (mouseenter)="hovering($event)" 
-        (mouseleave)="hovering($event)" [routerLinkActive]="['selected']">
+        (mouseleave)="hovering($event)" [routerLinkActive]="['selected']" >
             <a routerLink = "{{link[1]}}" >{{link[0]}}</a>
         </li>
     </ul>
