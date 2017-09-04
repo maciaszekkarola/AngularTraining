@@ -7,6 +7,7 @@ import { Component, OnInit, OnDestroy, AfterContentInit } from '@angular/core';
 })
 export class Element4Component implements OnInit, OnDestroy, AfterContentInit {
   visible = true;
+  text= 'welcome';
 
   constructor() { }
   getAlert() {

@@ -1,20 +1,29 @@
 <section>
-    <div *ngIf = "visible;then evenClicked else oddClicked">
-        this is ng-template test
+    <div>
+        <h2>Ng Template &amp; lifecycle hook test </h2>
+        <div *ngIf = "visible;then evenClicked else oddClicked">
+            this is ng-template test
+        </div>
+        <button (click)="toggleTemplate()">toggle template</button>
     </div>
-    <button (click)="toggleTemplate()">toggle</button>
+    <br>
+    <div>
+        <h2>{{text | uppercase}} - trasformed with pipe</h2>
+    </div>
 
 </section>
 
-<ng-template #oddClicked>
-    <h2>Option number 1</h2>
-    <p>is working!</p>
-</ng-template>
+<!-- templates -->
 
-<ng-template #evenClicked>
-    <h2>Option number 2</h2>
-    <p>is working!</p>
-</ng-template>
+<template #oddClicked>
+    <h2>number 1</h2>
+    <p>works great!</p>
+</template>
+
+<template #evenClicked>
+    <h2>Option 2</h2>
+    <p>works fine!</p>
+</template>
 
 
 
