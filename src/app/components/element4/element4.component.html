@@ -1,3 +1,21 @@
-<p>
-test message on destroy
-</p>
+<section>
+    <div *ngIf = "visible;then evenClicked else oddClicked">
+        this is ng-template test
+    </div>
+    <button (click)="toggleTemplate()">toggle</button>
+
+</section>
+
+<ng-template #oddClicked>
+    <h2>Option number 1</h2>
+    <p>is working!</p>
+</ng-template>
+
+<ng-template #evenClicked>
+    <h2>Option number 2</h2>
+    <p>is working!</p>
+</ng-template>
+
+
+
+

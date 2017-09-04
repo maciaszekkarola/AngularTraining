@@ -2,14 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { DataService } from './services/data.service';
+import { HttpModule } from '@angular/http';
+import { enableProdMode } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { Element1Component } from './components/element1/element1.component';
 import { Element2Component } from './components/element2/element2.component';
 import { Element3Component } from './components/element3/element3.component';
 import { Element4Component } from './components/element4/element4.component';
-import { DataService } from './services/data.service';
-import { HttpModule } from '@angular/http';
 import { AsideLeftComponent } from './components/aside-left/aside-left.component';
 import { AsideRightComponent } from './components/aside-right/aside-right.component';
 import { FirstComponent } from './components/aside-left/first/first.component';
@@ -35,6 +36,8 @@ const appRoutes: Routes = [
   {path: 'fourth/coffe', component: CoffeComponent},
   {path: 'fourth/tea', component: TeaComponent},
 ];
+
+enableProdMode();
 
 @NgModule({
   declarations: [

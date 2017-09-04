@@ -5,9 +5,8 @@
     </div>
     <nav>
       <ul>
-        <li [routerLinkActive]="['selected']" routerLink="{{link[1]}}" 
-        (mouseenter)="hover($event)" (mouseleave)="hover($event)" *ngFor="let link of links">
-          <a>{{link[0]}}</a>
+        <li [routerLinkActive]="['selected']" (mouseenter)="hover($event)" (mouseleave)="hover($event)" *ngFor="let link of links">
+          <a routerLink="{{link[1]}}">{{link[0]}}</a>
         </li>
       </ul>
     </nav>  

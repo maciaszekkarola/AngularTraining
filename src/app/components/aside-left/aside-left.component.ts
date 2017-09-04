@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 
 
 @Component({
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './aside-left.component.html',
   styleUrls: ['./aside-left.component.css']
 })
-export class AsideLeftComponent implements OnInit {
+export class AsideLeftComponent implements OnInit, AfterViewInit {
   hover = false;
   color = '#0c563f';
     // wielowymiarowa tablica, pierwszy string okresla nazwe linka, a drugi scieżkę
@@ -25,8 +25,21 @@ export class AsideLeftComponent implements OnInit {
     event.classList.toggle('coloured');
   }
 
+  // Lifecycle Hooks test
+  getView() {
+    const search = document.querySelectorAll('.test');
+    for (let i = 0; i < search.length; i = i + 1) {
+      console.log(search[i]);
+    }
+    console.log(search);
+  }
 
   ngOnInit() {
+    this.getView(); // tu jeszcze nie ma elementów listy
+  }
+  ngAfterViewInit() {
+    this.getView();
   }
 
 }
+

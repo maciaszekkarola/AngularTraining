@@ -12,7 +12,7 @@ export class AppComponent {
     ['pics ', '/element3'],
     ['onDestroy ', '/element4'],
   ];
-  constructor(){}
+  constructor() {}
 
   hover(event) {
   event = event.target;

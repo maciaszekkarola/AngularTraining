@@ -6,10 +6,15 @@ import { Component, OnInit, OnDestroy, AfterContentInit } from '@angular/core';
   styleUrls: ['./element4.component.css']
 })
 export class Element4Component implements OnInit, OnDestroy, AfterContentInit {
+  visible = true;
 
   constructor() { }
   getAlert() {
     return alert('you have left the last tab');
+  }
+
+  toggleTemplate() {
+    this.visible = !this.visible;
   }
 
   ngOnInit() {
