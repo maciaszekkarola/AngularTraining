@@ -1,13 +1,18 @@
 import { Component, OnInit, OnDestroy, AfterContentInit } from '@angular/core';
+import { FilterPipe } from '../../filter.pipe';
 
 @Component({
   selector: 'app-element4',
   templateUrl: './element4.component.html',
-  styleUrls: ['./element4.component.css']
+  styleUrls: ['./element4.component.css'],
+  // pipes: [FilterPipe]
 })
 export class Element4Component implements OnInit, OnDestroy, AfterContentInit {
   visible = true;
   text= 'welcome';
+  names: string[] = [
+    'kasia', 'basia', 'zosia', 'andrzej', 'angelika', 'kamil', 'zygmunt'
+  ];
 
   constructor() { }
   getAlert() {
@@ -32,3 +37,4 @@ export class Element4Component implements OnInit, OnDestroy, AfterContentInit {
   }
 
 }
+

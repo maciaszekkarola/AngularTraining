@@ -6,6 +6,7 @@ import { DataService } from './services/data.service';
 import { HttpModule } from '@angular/http';
 import { enableProdMode } from '@angular/core';
 
+
 import { AppComponent } from './app.component';
 import { Element1Component } from './components/element1/element1.component';
 import { Element2Component } from './components/element2/element2.component';
@@ -22,6 +23,7 @@ import { ArticleComponent } from './components/article/article.component';
 import { CoffeComponent } from './components/aside-left/fourth/coffe/coffe.component';
 import { TeaComponent } from './components/aside-left/fourth/tea/tea.component';
 import { HomeComponent } from './components/home/home.component';
+import { FilterPipe } from './filter.pipe';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -56,7 +58,8 @@ enableProdMode();
     ArticleComponent,
     CoffeComponent,
     TeaComponent,
-    HomeComponent
+    HomeComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
